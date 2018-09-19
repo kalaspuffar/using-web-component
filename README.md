@@ -32,17 +32,18 @@ cd my-angular-app
 npm install wc-input
 ```
 
-```app.module.ts```
-```CUSTOM_ELEMENTS_SCHEMA```
-```import { NgModule } from '@angular/core';```
-```schemas: [ CUSTOM_ELEMENTS_SCHEMA ],```
+Angular has a cache list of all the available components so in order to use web components we need to configure our module so it recognize custom elements. This is done by adding a schema to our module.
 
-```app.components.ts```
-```import 'wc-input';```
+In my case I open the module ```app.module.ts``` and then add ```CUSTOM_ELEMENTS_SCHEMA``` the import statement for angular core (```import { NgModule } from '@angular/core';```).
 
-```app.components.html```
-```<wc-input label="Enter name"></wc-input>```
+Then I need to update the module configuration and add ```schemas: [ CUSTOM_ELEMENTS_SCHEMA ]```.
 
+After that I need to import my web component into the angular component and this is done in ```app.components.ts``` with the import statement ```import 'wc-input';```.
+
+Lastly I add my web component tag ```<wc-input label="Enter name"></wc-input>``` into the html template file ```app.components.html```.
+
+
+In order to see my changes I need to serve the angular application and this is done with the command below.
 ```
 ng serve --open
 ```
