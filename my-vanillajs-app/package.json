@@ -1,0 +1,17 @@
+{
+  "name": "my-vanillajs-app",
+  "version": "0.0.1",
+  "description": "Simple example of usage of webcomponents in vanillajs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Daniel Persson",
+  "license": "MIT",
+  "devDependencies": {
+    "express": "^4.16.3"
+  },
+  "dependencies": {
+    "wc-input": "0.0.6"
+  }
+}
