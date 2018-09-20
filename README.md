@@ -47,3 +47,12 @@ In order to see my changes I need to serve the angular application and this is d
 ```
 ng serve --open
 ```
+
+### Vanilla example
+
+To try out the vanilla example using the bundled minified version of the component just follow the instruction below.
+
+```
+cd my-vanillajs-app
+npm start
+```
